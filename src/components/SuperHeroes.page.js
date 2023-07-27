@@ -8,7 +8,7 @@ export const SuperHeroesPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/superheroes');
+        const response = await axios.get('http://localhost:3000/superheroes');
         setData(response.data);
         setIsLoading(false);
       } catch (error) {
@@ -20,6 +20,8 @@ export const SuperHeroesPage = () => {
 
     fetchData();
   }, []);
+
+  console.log(data, 'DATA ');
 
   if (isLoading) {
     return <h2>Loading...</h2>;
