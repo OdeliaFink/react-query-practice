@@ -21,8 +21,6 @@ export const SuperHeroesPage = () => {
     fetchData();
   }, []);
 
-  console.log(data, 'DATA ');
-
   if (isLoading) {
     return <h2>Loading...</h2>;
   }
