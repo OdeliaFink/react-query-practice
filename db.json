@@ -29,5 +29,17 @@
       "id": 1,
       "name": "Laila Breger"
     }
+  ],
+  "users": [
+    {
+      "id": "odelia.finkel@gmail.com",
+      "skillsId": "software development"
+    }
+  ],
+  "skills": [
+    {
+      "id": "software development",
+      "frameworks": ["react", "vue", "next.js"]
+    }
   ]
 }
