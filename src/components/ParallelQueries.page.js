@@ -11,12 +11,6 @@ const fetchFriends = () => {
 export const ParallelQueriesPage = () => {
   const { data: superHeroes } = useQuery('super-heroes', fetchSuperHeroes);
   const { data: friends } = useQuery('friends', fetchFriends);
-  console.log(
-    '🚀 ~ file: ParallelQueries.page.js:14 ~ ParallelQueriesPage ~ friends:',
-    friends.data.map((item) => {
-      return item.name;
-    })
-  );
 
   return (
     <>
