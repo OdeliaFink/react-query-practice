@@ -8,7 +8,7 @@ export const SuperHeroesPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/superheroes');
+        const response = await axios.get('http://localhost:3001/superheroes');
         setData(response.data);
         setIsLoading(false);
       } catch (error) {
